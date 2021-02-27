@@ -18,3 +18,8 @@ table.pmj_vermelho tbody tr:nth-child(even)
 {
     background-color: #ffb2b2;
 }
+
+table.sei_custom_control_process tbody tr.infraTrClara td:nth-child(3) a:last-child div:last-child
+{
+    margin-bottom: 0.75em;
+}

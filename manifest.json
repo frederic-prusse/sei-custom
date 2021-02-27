@@ -1,11 +1,17 @@
 {
   "manifest_version": 2,
   "name": "SEI! Custom",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Add colors to process table, and show their description",
   "content_scripts": [{
-    "css": ["content.css"],
-    "js": ["content.js"],
+    "css": ["seiCustom.css"],
+    "js": [
+      "seiCustom/libs/setting.js",
+      "seiCustom/libs/formater.js",
+      "seiCustom/controlProcess/process.js", 
+      "seiCustom/controlProcess/table.js", 
+      "seiCustom/controlProcess/customControlProcess.js", 
+      "seiCustom.js"],
     "matches": ["https://sei.joinville.sc.gov.br/sei/controlador.php?acao=procedimento_controlar&*"]
   }],
   "icons": { "96": "sei_custom.png"},
